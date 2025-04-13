@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.unetikhoaluan2025.timabk.ui.home.HomeFragment"
+        android:label="Trang chủ"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_tktg"
+        android:name="com.unetikhoaluan2025.timabk.ui.tktg.TKTGFragment"
+        android:label="Thống kê thời gian"
+        tools:layout="@layout/tktg_fragment_tktg" />
+    <fragment
+        android:id="@+id/nav_gioihan"
+        android:name="com.unetikhoaluan2025.timabk.ui.gioihan.GioiHanFragment"
+        android:label="Thiết lập giới hạn"
+        tools:layout="@layout/gioihan_fragment_gioihan" />
+    <fragment
+        android:id="@+id/nav_gioihan_applimit_detail"
+        android:name="com.unetikhoaluan2025.timabk.ui.gioihan.AppLimitDetailFragment"
+        android:label="Sửa giới hạn"
+        tools:layout="@layout/gioihan_fragment_gioihan_applimit_detail" />
+
+    <fragment
+        android:id="@+id/nav_gioihantk"
+        android:name="com.unetikhoaluan2025.timabk.ui.gioihantimkiem.GHTKFragment"
+        android:label="Giới hạn tìm kiếm"
+        tools:layout="@layout/ghtk_fragment_ghtk" />
+    <fragment
+        android:id="@+id/nav_qltt"
+        android:name="com.unetikhoaluan2025.timabk.ui.qltt.QLTTFragment"
+        android:label="Quản lý thông tin"
+        tools:layout="@layout/qltt_fragment_qltt" />
+    <fragment
+        android:id="@+id/nav_qltt_sua"
+        android:name="com.unetikhoaluan2025.timabk.ui.qltt.SuaFragment"
+        android:label="Sửa thông tin"
+        tools:layout="@layout/qltt_fragment_qltt_sua" />
+    <fragment
+        android:id="@+id/nav_qltt_dmk"
+        android:name="com.unetikhoaluan2025.timabk.ui.qltt.DoiMKFragment"
+        android:label="Đổi mật khẩu"
+        tools:layout="@layout/qltt_fragment_qltt_doimk" />
+    <fragment
+        android:id="@+id/nav_gioihan_selectapp"
+        android:name="com.unetikhoaluan2025.timabk.ui.gioihan.SelectAppFragment"
+        android:label="Chọn ứng dụng"
+        tools:layout="@layout/gioihan_fragment_gioihan_selectapp" />
+    <fragment
+        android:id="@+id/nav_gioihan_selecttime"
+        android:name="com.unetikhoaluan2025.timabk.ui.gioihan.SelectTimeFragment"
+        android:label="Chọn thời gian"
+        tools:layout="@layout/gioihan_fragment_gioihan_selecttime" />
+    <fragment
+        android:id="@+id/nav_lapkehoach"
+        android:label="@string/lapkehoach"
+        android:name="com.unetikhoaluan2025.timabk.ui.lapkehoach.ui.LapKeHoachFragment"
+        tools:layout="@layout/lapkehoach_fragment_lapkehoach"/>
+    <fragment
+        android:id="@+id/nav_themkehoach"
+        android:label="@string/themkehoach"
+        android:name="com.unetikhoaluan2025.timabk.ui.lapkehoach.ui.ThemKeHoachFragment"
+        tools:layout="@layout/lapkehoach_fragment_themkehoach"/>
+    <fragment
+        android:id="@+id/nav_suakehoach"
+        android:label="@string/suakehoach"
+        android:name="com.unetikhoaluan2025.timabk.ui.lapkehoach.ui.Sua_Detail_Fragment"
+        tools:layout="@layout/lapkehoach_fragment_sua_detail_kehoach"/>
+</navigation>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:background="@drawable/bgrtrangchu">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnThongKe"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="352dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/btn_trangchu"
+        android:drawableTop="@drawable/baseline_bar_chart_24"
+        android:padding="10dp"
+        android:text="Thống kê thời gian sử dụng"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/btnTLGioiHan"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnTLGioiHan"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/btn_trangchu"
+        android:drawableTop="@drawable/baseline_hourglass_bottom_24"
+        android:padding="10dp"
+        android:text="Thiết lập giới hạn ứng dụng"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="@id/btnThongKe"
+        app:layout_constraintStart_toEndOf="@id/btnThongKe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <!-- Hàng 2: Button Lập kế hoạch & Quản lý -->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLapKeHoach"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/btn_trangchu"
+        android:drawableTop="@drawable/baseline_post_add_24"
+        android:padding="10dp"
+        android:text="Lập kế hoạch"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/btnGioiHanTK"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnThongKe"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGioiHanTK"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/btn_trangchu"
+        android:drawableTop="@drawable/baseline_search_off_24"
+        android:padding="10dp"
+        android:text="Giới hạn tìm kiếm"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnLapKeHoach"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/btnLapKeHoach"
+        app:layout_constraintTop_toTopOf="@id/btnLapKeHoach" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

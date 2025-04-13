@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.lapkehoach.ui.ThemKeHoachFragment"
+    android:background="@drawable/uneti2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- Nhập tên kế hoạch -->
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tenkh"/>
+
+            <EditText
+                android:id="@+id/editTenKH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="@string/seachkehoach"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/customedit2"/>
+
+            <!-- Ngày bắt đầu và Ngày kết thúc -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/star" />
+
+                    <EditText
+                        android:id="@+id/editStarKH"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:hint="Chọn ngày"
+                        android:background="@drawable/customedit2"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/end" />
+
+                    <EditText
+                        android:id="@+id/editEndKH"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:hint="Chọn ngày"
+                        android:background="@drawable/customedit2"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Mô tả -->
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mota"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/editMoTa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:minHeight="100dp"
+                android:gravity="top"
+                android:hint="Nhập mô tả kế hoạch"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/customedit2"/>
+
+            <!-- Thời gian nhắc nhở và Ngày nhắc nhở -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/timenhacnho" />
+
+                    <EditText
+                        android:id="@+id/editTGNN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Chọn thời gian nhắc nhở"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:background="@drawable/customedit2"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp">
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="173dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="@string/ngaynhacnho" />
+
+                    <EditText
+                        android:id="@+id/editNgayNN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Chọn ngày nhắc nhở"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:background="@drawable/customedit2"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Lặp lại và Ngày kết thúc lặp -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lặp lại" />
+
+                    <Spinner
+                        android:id="@+id/spinnerLapLai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/lapLaiOptions"
+                        android:background="@drawable/customedit2"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp">
+
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="169dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="@string/endlap" />
+
+                    <EditText
+                        android:id="@+id/editNgayKT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Chọn ngày kết thúc"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:background="@drawable/customedit2"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Nút Lưu và Hủy -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnSaveKH"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_save"
+                    android:backgroundTint="@color/blue"
+                    android:textColor="@android:color/white"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCancelKH"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_cancel"
+                    android:layout_marginStart="10dp"
+                    android:backgroundTint="@color/design_default_color_error"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

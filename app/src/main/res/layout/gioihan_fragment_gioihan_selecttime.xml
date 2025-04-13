@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/uneti2">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thiết lập giới hạn"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="10dp"/>
+
+    <!-- Checkbox chọn chế độ + Layout ẩn -->
+    <CheckBox
+        android:id="@+id/checkLimitUsage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giới hạn thời gian sử dụng"/>
+
+    <!-- Chế độ 1: Giới hạn thời gian sử dụng -->
+    <LinearLayout
+        android:id="@+id/layoutLimitTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:paddingTop="5dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thời gian:"
+            android:textSize="16sp"
+            android:paddingEnd="8dp"/>
+
+        <NumberPicker
+            android:id="@+id/numberPickerTime"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/loikhuyen"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkBlockTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chặn theo khung giờ"/>
+
+    <!-- Chế độ 2: Chặn theo khung giờ -->
+    <LinearLayout
+        android:id="@+id/layoutBlockTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:paddingTop="5dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thời gian chặn:"
+            android:textSize="16sp"
+            android:paddingBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Từ: "
+                android:textSize="16sp" />
+
+            <TimePicker
+                android:id="@+id/timePickerStart"
+                android:layout_width="230dp"
+                android:layout_height="150dp"
+                android:timePickerMode="spinner" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đến:"
+                android:textSize="16sp"/>
+
+            <TimePicker
+                android:id="@+id/timePickerEnd"
+                android:layout_width="230dp"
+                android:layout_height="150dp"
+                android:timePickerMode="spinner"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Nút Lưu -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lưu thiết lập"
+        android:background="@drawable/custombtn2"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

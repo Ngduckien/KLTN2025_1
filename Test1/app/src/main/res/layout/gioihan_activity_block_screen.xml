@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/uneti_mo"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <TextView
+        android:id="@+id/block_message"
+        android:layout_width="307dp"
+        android:layout_height="74dp"
+        android:gravity="center"
+        android:text="Thời gian sử dụng ứng dụng đã hết!"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDong"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:text="Đóng ứng dụng"
+            android:background="@drawable/btnxoa"
+            android:textColor="@color/white"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGiahan"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:text="Thêm 10 phút"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/btnthem"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+</LinearLayout>

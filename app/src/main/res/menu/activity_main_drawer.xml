@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/baseline_home_24"
+            android:title="@string/tlTrangchu" />
+        <item
+            android:id="@+id/nav_tktg"
+            android:icon="@drawable/baseline_bar_chart_24"
+            android:title="@string/tlThongkethoigian" />
+        <item
+            android:id="@+id/nav_lapkehoach"
+            android:icon="@drawable/baseline_post_add_24"
+            android:title="@string/lapkehoach" />
+        <item
+            android:id="@+id/nav_gioihan"
+            android:icon="@drawable/baseline_hourglass_bottom_24"
+            android:title="@string/tlgioihan" />
+
+        <item
+            android:id="@+id/nav_gioihantk"
+            android:icon="@drawable/baseline_search_off_24"
+            android:title="@string/tlgioihantimkiem" />
+
+        <item
+            android:id="@+id/nav_qltt"
+            android:icon="@drawable/baseline_manage_accounts_24"
+            android:title="@string/tlqltt" />
+
+    </group>
+</menu>

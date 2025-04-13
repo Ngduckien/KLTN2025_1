@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <CheckBox
+            android:id="@+id/cb_trang_thai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_ten_ke_hoach"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/btn_delete"
+            app:layout_constraintStart_toEndOf="@+id/cb_trang_thai"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_mo_ta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            app:layout_constraintEnd_toEndOf="@+id/tv_ten_ke_hoach"
+            app:layout_constraintStart_toStartOf="@+id/tv_ten_ke_hoach"
+            app:layout_constraintTop_toBottomOf="@+id/tv_ten_ke_hoach" />
+
+        <TextView
+            android:id="@+id/tv_label_ngay_bat_dau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Từ:"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="@+id/tv_mo_ta"
+            app:layout_constraintTop_toBottomOf="@+id/tv_mo_ta" />
+
+        <TextView
+            android:id="@+id/tv_ngay_bat_dau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_label_ngay_bat_dau"
+            app:layout_constraintStart_toEndOf="@+id/tv_label_ngay_bat_dau"
+            app:layout_constraintTop_toTopOf="@+id/tv_label_ngay_bat_dau" />
+
+        <TextView
+            android:id="@+id/tv_label_ngay_ket_thuc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Đến:"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_ngay_bat_dau"
+            app:layout_constraintStart_toEndOf="@+id/tv_ngay_bat_dau"
+            app:layout_constraintTop_toTopOf="@+id/tv_ngay_bat_dau" />
+
+        <TextView
+            android:id="@+id/tv_ngay_ket_thuc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_label_ngay_ket_thuc"
+            app:layout_constraintStart_toEndOf="@+id/tv_label_ngay_ket_thuc"
+            app:layout_constraintTop_toTopOf="@+id/tv_label_ngay_ket_thuc" />
+
+        <ImageButton
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Xóa kế hoạch"
+            android:src="@android:drawable/ic_menu_delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+           />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.DangKyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/uneti3">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng ký"
+            android:textStyle="bold"
+            android:textSize="50sp"
+            android:gravity="center"/>
+
+        <!-- Họ và tên -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutHoTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Nhập họ và tên">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editHoTen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:background="@drawable/customedit2"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Email/Số điện thoại -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Nhập email / số điện thoại">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:background="@drawable/customedit2"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Mật khẩu -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Nhập mật khẩu">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:background="@drawable/customedit2"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Nhập lại mật khẩu -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutXacNhanPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Nhập lại mật khẩu">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editXacNhanPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:background="@drawable/customedit2"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Mã pin -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutMaPin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Nhập mã pin">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editMaPin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:background="@drawable/customedit2"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Nút đăng ký -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDangKy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gửi"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:background="@drawable/custombtn1"/>
+
+        <!-- Nút quay lại -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quay lại"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:background="@drawable/custombtn1"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

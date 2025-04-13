@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">TiMaBK</string>
+    <string name="title_activity_trang_chu">TrangChuActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="accessibility_service_description" />
+    <string name="tieudegiohanapp">Chưa có ứng dụng nào</string>
+    <string name="loikhuyen"> Để bảo vệ đôi mắt và duy trì sự tập trung, bạn nên giới hạn thời gian sử dụng dưới 180 phút. </string>
+    <string name="limit_time_text">Thời gian giới hạn: %d phút</string>
+    <string name="btn_add">Thêm</string>
+    <string name="btn_edit">Sửa</string>
+    <string name="btn_save">Lưu</string>
+    <string name="btn_delete">Xóa</string>
+    <string name="btn_cancel">Hủy</string>
+    <string name="timkiem">Tìm</string>
+    <string name="title_confirm_delete">Xác nhận xóa</string>
+    <string name="msg_confirm_delete_all">Bạn có chắc chắn muốn xóa tất cả không?</string>
+    <string name="msg_enter_keyword">Vui lòng nhập từ khóa!</string>
+    <string name="msg_select_to_edit">Vui lòng chọn một từ khóa để sửa!</string>
+
+
+    <string name="label_hoten">Họ và tên: %s</string>
+    <string name="label_gioitinh">Giới tính: %s</string>
+    <string name="label_ngaysinh">Ngày sinh: %s</string>
+    <string name="label_phone">Số điện thoại: %s</string>
+    <string name="label_email">Email: %s</string>
+    <string name="label_username">Tên đăng nhập: %s</string>
+    <string name="not_available">Chưa có</string>
+    <string name="delete_account_title">Xác nhận xóa tài khoản</string>
+    <string name="delete_account_message">Bạn có chắc chắn muốn xóa tài khoản này không?</string>
+    <string name="yes">Có</string>
+    <string name="no">Không</string>
+    <string name="user_not_found">Không tìm thấy dữ liệu người dùng!</string>
+    <string name="delete_account_error">Xóa tài khoản không thành công</string>
+
+    <!-- Các lựa chọn lặp lại -->
+    <string-array name="lapLaiOptions">
+        <item>Không</item>
+        <item>Hàng ngày</item>
+        <item>Thứ 2 hàng tuần</item>
+        <item>Thứ 3 hàng tuần</item>
+        <item>Thứ 4 hàng tuần</item>
+        <item>Thứ 5 hàng tuần</item>
+        <item>Thứ 6 hàng tuần</item>
+        <item>Thứ 7 hàng tuần</item>
+        <item>Chủ nhật hàng tuần</item>
+    </string-array>
+
+    <string name="dangky"><u>Đăng ký</u></string>
+    <string name="quenmatkhau"><u>Quên mật khẩu?</u></string>
+
+    <string name="lapkehoach">Lập kế hoạch</string>
+    <string name="themkehoach">Thêm kế hoạch</string>
+    <string name="suakehoach">Sửa kế hoạch</string>
+    <string name="seachkehoach">Nhập kế hoạch</string>
+    <string name="hthanhkehoach">Đã hoàn thành</string>
+    <string name="allKH">Tất cả</string>
+    <string name="NoKeHoach">Chưa có kế hoạch</string>
+    <string name="Nlaplai">Lặp lại</string>
+    <string name="star">Ngày bắt đầu</string>
+    <string name="end">Ngày kết thúc</string>
+    <string name="endlap">Ngày kết thúc lặp</string>
+    <string name="timenhacnho">Thời gian nhắc nhở</string>
+    <string name="mota">Mô tả</string>
+    <string name="ngaynhacnho">Ngày nhắc nhở</string>
+    <string name="tenkh">Nhập tên kế hoạch</string>
+
+
+    <string name="tlTrangchu">Trang chủ</string>
+    <string name="tlThongkethoigian">Thống kê thời gian</string>
+    <string name="tllapkehoach">Lập kế hoạch</string>
+    <string name="tlgioihan">Thiết lập giới hạn </string>
+    <string name="tlgioihantimkiem">Giới hạn tìm kiếm</string>
+    <string name="tlqltt">Quản lý thông tin</string>
+
+
+</resources>

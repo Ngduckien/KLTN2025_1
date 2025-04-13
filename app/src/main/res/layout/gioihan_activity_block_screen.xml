@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:background="@drawable/uneti_mo"
+    android:orientation="vertical"
+    android:gravity="center"
+    tool:context=".ui.gioihan.BlockScreenActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/block_message"
+            android:layout_width="307dp"
+            android:layout_height="74dp"
+            android:gravity="center"
+            android:text="Thời gian sử dụng ứng dụng đã hết!"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnDong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đóng ứng dụng" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnGiahan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Thêm 10 phút" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

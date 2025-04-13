@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.qltt.QLTTFragment"
+    android:background="@drawable/uneti2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:contentDescription="Ảnh đại diện người dùng"
+            android:src="@drawable/baseline_account_circle_24"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+
+            >
+
+
+            <TextView
+                android:id="@+id/txtten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Họ và tên: Nguyễn Văn Hoàng Kim Anh"
+                android:layout_marginBottom="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtGT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giới tính: Nam"
+                android:layout_marginBottom="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/txtNgaySinh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngày sinh: 20/12/2006"
+                android:layout_marginBottom="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số điện thoại: 012345678"
+                android:layout_marginBottom="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: test123@gmail.com"
+                android:layout_marginBottom="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/txtUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên đăng nhập: test123@gmail.com"
+                android:layout_marginBottom="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="15dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnDoiMK"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/custombtn2"
+                    android:text="Đổi mật khẩu"
+                    android:textColor="@color/white"
+                    android:layout_marginEnd="5dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnSua"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/custombtn2"
+                    android:text="Sửa thông tin"
+                    android:textColor="@color/white"
+                    android:layout_marginEnd="5dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnXoaTK"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/custombtn2"
+                    android:backgroundTint="#F00E0E"
+                    android:text="Xóa tài khoản"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

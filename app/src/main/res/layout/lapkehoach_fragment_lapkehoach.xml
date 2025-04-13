@@ -1,0 +1,95 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipeRefresh"
+    tools:context=".ui.lapkehoach.ui.LapKeHoachFragment"
+    android:background="@drawable/uneti2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- Thanh tìm kiếm -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <EditText
+                android:id="@+id/editSeachKH"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="@string/seachkehoach"
+                android:background="@drawable/customedit2"
+                android:padding="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSeachKH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/timkiem"
+                android:background="@drawable/custombtn1"
+                android:textColor="@color/white"
+                android:layout_marginStart="10dp"/>
+        </LinearLayout>
+
+        <!-- 2 nút thao tác -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnHTKH"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/hthanhkehoach"
+                android:background="@drawable/custombtn1"
+                android:textColor="@color/white"
+                android:layout_marginEnd="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnThemKH"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/themkehoach"
+                android:textColor="@color/white"
+                android:background="@drawable/custombtn1"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textSize="25sp"
+            android:text="@string/NoKeHoach"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/SoKH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Tổng số kế hoạch"
+            />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewKeHoach"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidx.recyclerview.widget="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/uneti2">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chọn ứng dụng cần giới hạn"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="10dp"/>
+
+    <!-- Ô tìm kiếm ứng dụng -->
+    <AutoCompleteTextView
+        android:id="@+id/etSearchApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tìm kiếm ứng dụng"
+        android:padding="10dp"
+        android:background="@drawable/custimedittext1"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:drawablePadding="8dp"
+        android:inputType="text"
+        android:imeOptions="actionSearch"/>
+
+    <!-- RecyclerView hiển thị danh sách ứng dụng -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewApps"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/custimedittext1"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:elevation="4dp"/>
+
+    <!-- Nút xác nhận -->
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xác nhận"
+        android:background="@drawable/custombtn2"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:elevation="4dp"/>
+</LinearLayout>
